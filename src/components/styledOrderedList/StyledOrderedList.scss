@@ -1,0 +1,89 @@
+.StyledOrderedList {
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Helvetica Neue';
+  
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        counter-increment: item;
+        display: flex;
+        margin: 70px auto;
+        position: relative;
+  
+        // &::before {
+        //   background-color: #ccc;
+        //   border-radius: 50%;
+        //   color: #fff;
+        //   content: counter(item);
+        //   display: inline-block;
+        //   font-size: 12px;
+        //   font-weight: bold;
+        //   height: 20px;
+        //   line-height: 20px;
+        //   text-align: center;
+        //   width: 20px;
+        //   margin-right: 10px;
+        // }
+
+        // .feature-name {
+        //   position: absolute;
+        //   left: -7%;
+        //   top: -40%;
+        //   z-index: 1;
+        //   padding: 5px 20px;
+        //   font-weight: bold;
+        //   border: 1px solid #000000;
+        //   margin-left: 50px;
+        //   font-size: 20px;
+        //   background: linear-gradient(135deg, yellow 0%,green 100%);border-radius: 1rem 1rem 0 1rem;
+        //   //content: '';
+        //   border-radius:  2rem 2rem 0 2rem ;
+        //   width: 30%;
+        // }
+  
+        .feature-description {
+          background-color: #ffffff;
+          //margin-left: 100px; /* adjust as necessary */
+          padding: 15px;
+          z-index: 0;
+          height: auto;
+          font-size: 24px;
+          width: 100%;
+          border-radius:  2rem 2rem 0 2rem ;
+          align-items: center;
+          text-align: left;
+          border: 3px solid #000;
+          box-shadow: 7px 7px 0 0 #fdd700;
+
+          span{
+            font-weight: bold;
+            background-color: #fdd700;
+            margin-right: 5px;
+            border-radius: 5px;
+            padding: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px){
+    .StyledOrderedList{
+      padding: 0;
+      transform: translateX(-5px);
+      ul{
+        li{
+          margin: 40px auto;
+
+          .feature-description{
+            font-size: 20px;
+          }
+    }
+  }
+    }
+  }
+  

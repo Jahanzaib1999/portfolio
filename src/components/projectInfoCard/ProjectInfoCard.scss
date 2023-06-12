@@ -1,0 +1,92 @@
+.InfoCard {
+    background-color: #fff;
+    border: 3px solid #000;
+    margin-bottom: 20px;
+    padding: 20px 20px 44px;
+    height: fit-content;
+    width: 250px;
+    border-radius: 38px;
+    box-shadow: 7px 7px 0 0 #fdd700;
+    text-align: left;
+    font-family: 'Helvetica Neue';
+    position: sticky;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1.5px;
+  
+    .InfoCard-header {
+      font-size: 30px;
+      font-weight: bold;
+      padding: 10px;
+    }
+  
+    .InfoCard-content {
+      padding: 10px;
+  
+      ul {
+        list-style: square;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        
+  
+        li {
+          margin-bottom: 5px;
+          display: flex;
+          color:#888;
+          margin-bottom: 20px;
+
+  
+          span {
+            color:#000;
+            margin-right: 10px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .info-card-button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 26px 38px;
+      border-radius: 14px;
+      background-color: #0b0b0b;
+      color:#fff;
+      font-size: 18px;
+      font-family: 'Coolvetica';
+      letter-spacing: 1px;
+      margin-top: 15px;
+      width: 100%;
+      
+      &:hover{
+        background-color: #1c92ff;
+        cursor: pointer;
+        border-color: #1c92ff;
+      }
+
+      .button-icon{
+        padding-left: 5px;
+        margin-top: 0;
+        transform: translateY(-10%)
+      }
+    }
+
+    .github-button{
+      background-color: #fff;
+      color: #000;
+    }
+  }
+  
+
+  @media screen and (max-width: 767px){
+    .InfoCard{
+      width: 100%;
+
+      .github-button{
+        font-size: 20px;
+      }
+    }
+  }

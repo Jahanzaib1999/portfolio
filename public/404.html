@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./logo-j-new.ico" />
+    <title>404</title>
+
+    <!-- <script>
+      document.querySelector('.homepage-button').addEventListener('click',()=>{
+        window.location.href='https://portfolio-website-f32bd.web.app/'
+      })
+    </script> -->
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('.homepage-button').addEventListener('click', () => {
+          window.location.href='https://portfolio-website-f32bd.web.app/';
+        });
+      });
+    </script>
+    
+
+    <style>
+      .error-page {
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Coolvetica';
+  margin-bottom: 500px;
+  position: relative;
+}
+.error-page .main-div {
+  width: 80%;
+  margin: 100px 50px;
+  margin-left: 15%;
+}
+.error-page .main-div ._404-div {
+  transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  opacity: 0.2;
+}
+.error-page .main-div ._404-div ._404-not-found-number {
+  color: #eceae8;
+  font-size: 22.8vw;
+  line-height: 1.181em;
+  font-weight: 100;
+  letter-spacing: 2rem;
+  text-shadow: -4px -4px 0 #fff, 4px -4px 0 #fff, -4px 4px 0 #fff, 4px 4px 0 #fff;
+}
+.error-page .main-div .overlay-div {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
+  margin-top: -300px;
+}
+.error-page .main-div .overlay-div .error-image {
+  max-width: 100%;
+  height: auto;
+}
+.error-page .main-div .overlay-div .error-image img {
+  width: 100%;
+  max-width: 500px;
+}
+.error-page .main-div .overlay-div .error-msg {
+  text-align: center;
+  color: #fff;
+  text-align: left;
+}
+.error-page .main-div .overlay-div .error-msg .error-header {
+  font-size: 6rem;
+  line-height: 1.181em;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  margin-bottom: 50px;
+}
+.error-page .main-div .overlay-div .error-msg .error-body {
+  font-size: 2rem;
+  margin-top: 50px;
+}
+.error-page .main-div .overlay-div .error-msg .error-body p {
+  margin-bottom: 20px;
+}
+.error-page .main-div .overlay-div .error-msg .error-body button {
+  display: flex;
+  padding: 26px 38px;
+  border-radius: 14px;
+  background-color: #0b0b0b;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Coolvetica';
+  letter-spacing: 1px;
+  margin-top: 10px;
+  border: 2px solid #fff;
+
+}
+.error-page .main-div .overlay-div .error-msg .error-body button:hover {
+  background-color: #1c92ff;
+  cursor: pointer;
+  border-color: #1c92ff;
+}
+
+@media screen and (max-width: 767px) {
+  .error-page .main-div {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+  .error-page .main-div ._404-div {
+    align-self: center;
+    padding-top: 50px;
+  }
+
+  .error-page .main-div .overlay-div .error-image {
+  max-width: 70%;
+  height: auto;
+  align-self: center;
+}
+.error-page .main-div .overlay-div .error-image img {
+  width: 100%;
+  max-width: 500px;
+  
+}
+
+  .error-page .main-div .overlay-div {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+  transform: translateY(-120px);
+  gap: 30px;
+}
+
+.error-page .main-div ._404-div ._404-not-found-number {
+  font-size: 40vw;
+}
+
+.error-page .main-div .overlay-div .error-msg .error-header {
+  font-size: 3rem;
+  line-height: 1.181em;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+}
+
+.error-page .main-div .overlay-div .error-msg .error-body {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.error-page .main-div .overlay-div .error-msg .error-body p {
+  margin-bottom: 20px;
+}
+
+.error-page .main-div .overlay-div .error-msg .error-body button {
+  display: flex;
+  padding: 13px 19px;
+  border-radius: 10px;
+  background-color: #0b0b0b;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Coolvetica';
+  letter-spacing: 1px;
+  margin-top: 10px;
+  border: 2px solid #fff;
+
+}
+
+}
+
+@media screen and (max-width:1000px) and (orientation:landscape){
+  .error-page .main-div {
+    width: 100%;
+    margin-left: 0px;
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+  .error-page .main-div .overlay-div .error-msg .error-header {
+  font-size: 3rem;
+  line-height: 1.181em;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+}
+
+.error-page .main-div .overlay-div {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  transform: translateY(-275px);
+  gap: 30px;
+  padding-top: 80px;
+}
+
+.error-page .main-div .overlay-div .error-msg {
+  text-align: center;
+  color: #fff;
+  text-align: left;
+  padding-right: 50px;
+}
+
+.error-page .main-div .overlay-div .error-image img {
+  width: 80%;
+  max-width: 500px;
+  transform: translateY(50px);
+  
+}
+
+.error-page .main-div .overlay-div .error-msg .error-body {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.error-page .main-div .overlay-div .error-msg .error-body p {
+  margin-bottom: 20px;
+}
+
+.error-page .main-div .overlay-div .error-msg .error-body button {
+  display: flex;
+  padding: 13px 19px;
+  border-radius: 10px;
+  background-color: #0b0b0b;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Coolvetica';
+  letter-spacing: 1px;
+  margin-top: 10px;
+  border: 2px solid #fff;
+
+}
+
+}
+
+body {
+  margin: 0;
+  font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
+  color: #444;
+  background: #022c43;
+  overflow: hidden;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="error-page">
+      <div class="main-div">
+        <div class="_404-div">
+          <div class="_404-not-found-number">404</div>
+        </div>
+        <div class="overlay-div">
+          <div class="error-image">
+            <img src="data:image/png;base64,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" alt="error-image"/>
+          </div>
+          <div class="error-msg">
+            <div class="error-header">Oops!<br/>Page Not Found</div>
+            <div class="error-body"><p>You have landed on my custom 404 page. Thanks for finding it.</p>
+              <button class="homepage-button">Go to Homepage</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

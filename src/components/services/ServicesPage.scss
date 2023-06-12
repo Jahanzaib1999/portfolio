@@ -1,0 +1,387 @@
+.services-page{
+    padding-left: 100px;
+    padding-right: 50px;
+    width: calc(100% - 150px);
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+
+    h1.page-title {
+        margin-left: 120px;
+        margin-top: 100px;
+    }
+
+    // .banner-wrapper-1{
+    //     position: relative;
+    //     z-index: 1;
+    //     margin-top: 50px;
+    //     margin-bottom: 50px;
+    //     transform: translate(-15px,0px) rotate(-5deg);
+    //     width: 110%;
+    //     overflow: hidden;
+    //   }
+
+    //   .banner-wrapper-2 {
+    //     position: relative;
+    //     z-index: 1;
+    //     margin-top: 50px;
+    //     margin-bottom: 50px;
+    //     transform: rotate(330deg);
+    //     overflow: hidden;
+    //   }
+      
+    //   .banner-content {
+    //     background-color: black;
+    //     padding: 30px;
+    //     opacity: 0.3;
+    //   }
+
+    //   .graphic-list{
+    //     position: relative;
+    //     display: inline-flex;
+    //     list-style: none;
+    //     padding: 0;
+    //     margin: 0;
+
+    //     li{
+    //         float: left;
+    //         padding-left: 100px;
+    //         font-size: 50px;
+    //     }
+    //   }
+      
+    //   .banner-content h2 {
+    //     font-size: 24px;
+    //     margin-bottom: 10px;
+    //   }
+      
+    //   .banner-content p {
+    //     font-size: 16px;
+    //     margin-bottom: 20px;
+    //   }
+      
+    //   .banner-content .fa-icon {
+    //     font-size: 32px;
+    //     color: #333;
+    //   }
+
+      .services-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 10%;
+        font-family: 'Coolvetica';
+
+        .services-text {
+            max-width: 50%;
+          }
+          
+          .services-text h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: white;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            line-height: 70px;
+          }
+          
+          .services-text p {
+            font-size: 16px;
+            color: gray;
+          }
+          
+          .heading-span-1{
+            margin: 2px 4px;
+            padding: 5px 4px 5px 0px;
+            color: #ff4a60;
+            background-color: white;
+            //background-color: hotpink;
+          }
+
+          .heading-span-2{
+            margin: 2px 4px;
+            padding: 5px 4px 5px 0px;
+            color: #1c92ff;
+            background-color: white;
+          }
+
+          .heading-span-3{
+            margin: 2px 4px;
+            padding: 5px 4px 5px 0px;
+            background-color: white;        
+            color: #20ff1c;
+          }
+          
+          .services-image {
+            max-width: 40%;
+          }
+          
+          .services-image img {
+            max-width: 100%;
+          }
+      }
+
+      .services-second-container-heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 100px auto;
+        color: white;
+        font-family: 'Coolvetica';
+        font-weight: normal;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        font-size: 40px;
+
+        span{
+            background-color: #ff4a60;
+            margin-left: 8px;
+            padding: 5px;
+            border-radius: 2px;
+        }
+      }
+
+      .service-cards-container{
+        margin-left: 12%;
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin-bottom: 300px;
+    }
+      
+    .stage-cube-cont {
+      width: 40%;
+      height: 50%;
+      top: 0;
+      padding-top: 18%;
+      margin-left: 0;
+      position: absolute;
+      right: 0;
+      overflow: hidden;
+
+      .cubespinner {
+        animation-name: spincube;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-delay: 4s;
+        animation-duration: 12s;
+        transform-style: preserve-3d;
+        transform-origin: 100px 100px 0;
+        margin-left: calc(50% - 100px);
+      
+        div {
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          border: 1px solid #ccc;
+          background: rgba(255, 255, 255, 0.4);
+          text-align: center;
+          font-size: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 0 20px 0px lightyellow;
+        }
+      
+        .face1 {
+          transform: translateZ(100px);
+          color: #dd0031;
+        }
+        .face2 {
+          transform: rotateY(90deg) translateZ(100px);
+          color: #f06529;
+        }
+        .face3 {
+          transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+          color: #28a4d9;
+        }
+        .face4 {
+          transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+          color: #5ed4f4;
+        }
+        .face5 {
+          transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+          color: #efd81d;
+        }
+        .face6 {
+          transform: rotateX(-90deg) translateZ(100px);
+          color: #ec4d28;
+        }
+    
+        animation-play-state: running;
+        &:hover {
+          animation-play-state: paused;
+        }
+      }
+    }
+    
+    
+    
+    
+    
+}
+
+@keyframes spincube {
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateX(90deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
+  }
+}
+
+@media screen and (max-width: 767px){
+  .services-page{
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    h1.page-title{
+
+      margin-left: 40px;
+      margin-top: 25%;
+    }
+
+    .services-container{
+      flex-direction: column;
+      padding-left: 20px;
+      margin-left: 0;
+      margin-right: 8%;
+
+      .services-text{
+        min-width: 100%;
+
+        h2{
+          font-size: 20px;
+          line-height: 50px;
+        }
+
+      }
+
+      // .stage-cube-cont{
+      //   position: static;
+      //   height: 150px;
+      //   width: 100%;
+      //   overflow: visible;
+      //   margin: 100px 5px;
+
+        
+      // }
+
+      .stage-cube-cont {
+        position: static;
+        height: 150px;
+        width: 100%;
+        overflow: visible;
+        margin: 100px 5px;
+        transform: scale(0.8);
+      }
+      
+    }
+
+    .services-second-container-heading{
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        font-size: 24px;
+        width: 100%;
+
+        span{
+            background-color: #ff4a60;
+            margin-left: 5px;
+            padding: 3px;
+            border-radius: 2px;
+        }
+      
+    }
+
+    .service-cards-container{
+      margin-left: 20px;
+      width: 90%;
+      grid-template-columns: 1fr;
+  }
+  }
+}
+
+@media screen and (max-width:1000px) and (orientation:landscape){
+  .services-page{
+    padding-left: 12%;
+    padding-right: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    h1.page-title{
+
+      margin-left: 8%;
+      margin-top: 10%;
+    }
+
+    .services-container{
+      flex-direction: column;
+      padding-left: 20px;
+      margin-left: 5%;
+      margin-right: 20%;
+
+      .services-text{
+        min-width: 100%;
+
+        h2{
+          font-size: 20px;
+          line-height: 50px;
+        }
+
+      }
+
+      .stage-cube-cont {
+        position: static;
+        height: 150px;
+        width: 100%;
+        overflow: visible;
+        margin: 100px 5px;
+        transform: scale(0.8);
+      }
+      
+    }
+
+    .services-second-container-heading{
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        font-size: 24px;
+        width: 100%;
+        transform: translateX(-10%);
+
+        span{
+            background-color: #ff4a60;
+            margin-left: 5px;
+            padding: 3px;
+            border-radius: 2px;
+        }
+      
+    }
+
+    .service-cards-container{
+      margin-left: 8%;
+      width: 75%;
+      grid-template-columns: 1fr 1fr;
+  }
+  }
+}

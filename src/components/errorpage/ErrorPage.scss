@@ -1,0 +1,195 @@
+.error-page{
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Coolvetica';
+  margin-bottom: 500px;
+  position: relative;
+
+  .main-div{
+    width: 80%;
+    margin: 150px 50px;
+    margin-left: 15%;
+
+    ._404-div{
+      transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+      opacity: 0.2;
+
+      ._404-not-found-number{
+        color: #eceae8;
+        font-size: 22.8vw;
+        line-height: 1.181em;
+        font-weight: 100;
+        letter-spacing: 2rem;
+        text-shadow: -4px -4px 0 #fff, 4px -4px 0 #fff, -4px 4px 0 #fff, 4px 4px 0 #fff;
+      }
+    }
+
+    .overlay-div{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        gap: 50px;
+        margin-top: -300px;
+
+        .error-image{
+            max-width: 100%;
+            height: auto;
+    
+            img{
+              width: 100%;
+              max-width: 500px;
+            }
+          }
+    
+          .error-msg{
+            text-align: center;
+            color: #fff;
+            text-align: left;
+    
+            .error-header{
+              font-size: 8rem;
+              line-height: 1.181em;
+              font-weight: 900;
+              letter-spacing: 0.2rem;
+              margin-bottom: 50px;
+              
+            }
+    
+            .error-body{
+              font-size: 2rem;
+              margin-top: 50px;
+    
+              p{
+                margin-bottom: 20px;
+              }
+    
+              button{
+                display: flex;
+                padding: 26px 38px;
+                border-radius: 14px;
+                background-color: #0b0b0b;
+                color:#fff;
+                font-size: 18px;
+                font-family: 'Coolvetica';
+                letter-spacing: 1px;
+                margin-top: 10px;
+      
+                &:hover{
+                    background-color: #1c92ff;
+                    cursor: pointer;
+                    border-color: #1c92ff;
+                }
+              }
+            }
+          }
+        
+    }
+  }
+}
+
+@media screen and (max-width: 767px){
+  .error-page{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Coolvetica';
+    margin-bottom: 500px;
+    position: relative;
+  
+    .main-div{
+      width: 80%;
+      margin: 150px 50px;
+      margin-left: 15%;
+  
+      ._404-div{
+        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+        opacity: 0.2;
+  
+        ._404-not-found-number{
+          color: #eceae8;
+          font-size: 22.8vw;
+          line-height: 1.181em;
+          font-weight: 100;
+          letter-spacing: 2rem;
+          text-shadow: -4px -4px 0 #fff, 4px -4px 0 #fff, -4px 4px 0 #fff, 4px 4px 0 #fff;
+        }
+      }
+  
+      .overlay-div{
+          position: relative;
+          z-index: 1;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 50px;
+          gap: 50px;
+          margin-top: -300px;
+  
+          .error-image{
+              max-width: 100%;
+              height: auto;
+      
+              img{
+                width: 100%;
+                max-width: 500px;
+              }
+            }
+      
+            .error-msg{
+              text-align: center;
+              color: #fff;
+              text-align: left;
+      
+              .error-header{
+                font-size: 8rem;
+                line-height: 1.181em;
+                font-weight: 900;
+                letter-spacing: 0.2rem;
+                margin-bottom: 50px;
+                
+              }
+      
+              .error-body{
+                font-size: 2rem;
+                margin-top: 50px;
+      
+                p{
+                  margin-bottom: 20px;
+                }
+      
+                button{
+                  display: flex;
+                  padding: 26px 38px;
+                  border-radius: 14px;
+                  background-color: #0b0b0b;
+                  color:#fff;
+                  font-size: 18px;
+                  font-family: 'Coolvetica';
+                  letter-spacing: 1px;
+                  margin-top: 10px;
+        
+                  &:hover{
+                      background-color: #1c92ff;
+                      cursor: pointer;
+                      border-color: #1c92ff;
+                  }
+                }
+              }
+            }
+          
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1000px) and (orientation:landscape){}
