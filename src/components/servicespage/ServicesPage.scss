@@ -247,81 +247,16 @@
   }
 }
 
-@media screen and (max-width: 767px){
-  .services-page{
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
 
-    h1.page-title{
 
-      margin-left: 40px;
-      margin-top: 25%;
-    }
 
-    .services-container{
-      flex-direction: column;
-      padding-left: 20px;
-      margin-left: 0;
-      margin-right: 8%;
 
-      .services-text{
-        min-width: 100%;
 
-        h2{
-          font-size: 20px;
-          line-height: 50px;
-        }
 
-      }
 
-      // .stage-cube-cont{
-      //   position: static;
-      //   height: 150px;
-      //   width: 100%;
-      //   overflow: visible;
-      //   margin: 100px 5px;
 
-        
-      // }
 
-      .stage-cube-cont {
-        position: static;
-        height: 150px;
-        width: 100%;
-        overflow: visible;
-        margin: 100px 5px;
-        transform: scale(0.8);
-      }
-      
-    }
-
-    .services-second-container-heading{
-        letter-spacing: 1px;
-        word-spacing: 1px;
-        font-size: 24px;
-        width: 100%;
-
-        span{
-            background-color: #ff4a60;
-            margin-left: 5px;
-            padding: 3px;
-            border-radius: 2px;
-        }
-      
-    }
-
-    .service-cards-container{
-      margin-left: 20px;
-      width: 90%;
-      grid-template-columns: 1fr;
-  }
-  }
-}
-
-@media screen and (max-width:1000px) and (orientation:landscape){
+@media (max-width:1000px) {
   .services-page{
     padding-left: 12%;
     padding-right: 0;
@@ -367,7 +302,6 @@
         word-spacing: 1px;
         font-size: 24px;
         width: 100%;
-        transform: translateX(-10%);
 
         span{
             background-color: #ff4a60;
@@ -382,6 +316,74 @@
       margin-left: 8%;
       width: 75%;
       grid-template-columns: 1fr 1fr;
+  }
+  }
+}
+
+
+
+
+
+@media (max-width: 767px){
+  .services-page{
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    h1.page-title{
+
+      margin-left: 50px;
+      margin-top: 25%;
+    }
+
+    .services-container{
+      flex-direction: column;
+      padding-left: 30px;
+      margin-left: 0;
+      margin-right: 5%;
+
+      .services-text{
+        min-width: 100%;
+
+        h2{
+          font-size: 20px;
+          line-height: 50px;
+        }
+
+      }
+
+      .stage-cube-cont {
+        position: static;
+        height: 150px;
+        width: 100%;
+        overflow: visible;
+        margin: 100px 5px;
+        transform: scale(0.8);
+      }
+      
+    }
+
+    .services-second-container-heading{
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        font-size: 24px;
+        width: 100%;
+
+        span{
+            background-color: #ff4a60;
+            margin-left: 5px;
+            padding: 3px;
+            border-radius: 2px;
+        }
+      
+    }
+
+    .service-cards-container{
+      margin-left: 30px;
+      width: 85%;
+      grid-template-columns: 1fr;
   }
   }
 }

@@ -31,7 +31,7 @@
 
     .curve {
         position: absolute;
-        top: 00;
+        top: 0;
         left: 0;
         width: 100%;
         overflow: hidden;
@@ -316,7 +316,19 @@
     }
 }
 
-@media screen and (max-width: 767px){
+@media (max-width:1000px) {
+    
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px){
     .project-detail-page{
         padding-left: 0;
         padding-right: 0;

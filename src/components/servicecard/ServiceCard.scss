@@ -55,9 +55,10 @@
     cursor: pointer;
     box-shadow: 7px 7px 0 0 #fdd700;
     transform: translate3d(0px, -10px,0.01px);
+    transition-duration: 0.25s;
 
     .card-image{
-      transform: scale(1.1);
+      transform: scale(1.05);
       transition-duration: 0.5s;
     }
   }
@@ -106,24 +107,7 @@
 }
   
 
-@media screen and (max-width: 767px){
-  .card{
-    width: 95%;
-  }
-
-  .last-card{
-    width: 95%;
-
-    .get-in-touch-button{
-      svg{
-        width: 30%;
-      }
-      font-size: 18px;
-    }
-  }
-}
-
-@media screen and (max-width:1000px) and (orientation:landscape){
+@media (max-width:1000px) {
   .card{
     width: 100%;
   }
@@ -141,4 +125,22 @@
 }
   
 
-  
+
+
+
+@media (max-width: 767px){
+  .card{
+    width: 95%;
+  }
+
+  .last-card{
+    width: 95%;
+
+    .get-in-touch-button{
+      svg{
+        width: 30%;
+      }
+      font-size: 18px;
+    }
+  }
+}

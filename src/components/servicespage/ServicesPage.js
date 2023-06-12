@@ -63,7 +63,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Footer from '../../components/footer/Footer'
+import Footer from '../footer/Footer'
 
 function ServicesPage() {
   const iconList = [
