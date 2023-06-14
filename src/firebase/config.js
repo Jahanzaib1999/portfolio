@@ -4,7 +4,7 @@ import 'firebase/compat/auth'
 import 'firebase/compat/storage'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyBgmlz31RNhUkQCJI84e7-KQYXlCdz3Z9I',
+  apiKey: `${process.env.FIREBASE_API_KEY}`,
   authDomain: 'portfolio-website-f32bd.firebaseapp.com',
   projectId: 'portfolio-website-f32bd',
   storageBucket: 'portfolio-website-f32bd.appspot.com',
