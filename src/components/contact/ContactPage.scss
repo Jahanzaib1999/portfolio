@@ -15,7 +15,7 @@
       flex-direction: row;
       align-items: flex-start;
       justify-content: space-between;
-      margin-bottom:120%;
+      margin-bottom:100%;
       overflow-y: hidden;
       //padding-top: 20%;
       margin-top: 20%;
@@ -46,13 +46,16 @@
         animation: fadeInUp 2s 2s;
         animation-fill-mode: forwards;
       
-        span {
+        
+          a{
           font-size: 16px;
           color: #ffd700;
           display: block;
           padding-top: 10px;
+          text-decoration: none;
+          }
           
-        }
+        
       }
       }
 
@@ -305,7 +308,7 @@
 
 
             .contact-form {
-              width: 100%;
+              width: 95%;
               margin-top: 20px;
             }
 
@@ -334,20 +337,20 @@
         }
 
         .main-div-right{
-          width: 100%;
+          width: 97%;
           position: relative; 
         
         
 
         img{
           position: fixed;
-          top: -5%;
+          top: -2%;
           transform: translateX(-50px) !important;
         }
 
         .logo-svg {
           position: fixed;
-          top: -5%;
+          top: -2%;
           transform: translateX(-50px) !important;
         }
               

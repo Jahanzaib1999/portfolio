@@ -42,8 +42,8 @@
     .curve svg {
         position: relative;
         display: block;
-        width: calc(148% + 1.3px);
-        height: 275px;
+        width: calc(125% + 50px);
+        height: 300px;
     }
     
     .curve .shape-fill {
@@ -54,9 +54,9 @@
     .project-body{
         display: flex;
         flex-direction: column;
-        padding: 100px 20px;
-        margin-left: 9%;
-        margin-right: 5%;
+        padding: 100px 0px;
+        margin-left: 100px;
+        margin-right: 50px;
         margin-bottom: 10%;
 
         .project-overview{
@@ -317,7 +317,103 @@
 }
 
 @media (max-width:1000px) {
+    .project-detail-page{
+
+        .project-header{
     
+            h1.project-title {
+            margin-left: 90px;
+            margin-top: 70px;
+            font-size: 36px;
+            }
+
+            .curve {
+                position: absolute;
+                top: 00;
+                left: 0;
+                width: 100%;
+                overflow: hidden;
+                line-height: 0;
+                transform: rotate(180deg);
+            }
+            
+            .curve svg {
+                position: relative;
+                display: block;
+                width: calc(100% + 300px);
+                height: 250px;
+            }
+            
+            
+        }
+
+        .project-body{
+            padding: 100px 0px;
+            margin-left: 80px;
+            margin-right: 20px;
+            margin-bottom: 10%;
+    
+            .project-overview{
+                p{
+                    font-size: 16px;
+                }
+            }
+    
+            .section-heading{
+                font-size: 24px;
+                color: #fdd700;
+                margin-top: 30px;
+            }
+    
+            .project-body-inner{
+                flex-direction: column-reverse;
+                padding: 0px;
+    
+                
+    
+                  .project-body-inner-left{
+                    
+                    .project-technologies {
+                        
+    
+                        .technology-list {
+                          display: flex;
+                          flex-direction: column;
+                          margin-top: 50px;
+                          justify-content: center;
+                          gap: 3rem;
+                          width: 100%;
+                          margin-bottom: 50px;
+                      
+                          .technology-item {
+                            padding: 0.5rem;
+                      
+                            .icon-container {
+                              margin-right: 0.5rem;
+                              padding: 20px;
+                            }
+                      
+                            
+                          }
+                        }
+                      }
+                    p{
+                        text-align: justify;
+                        font-size: 20px;
+                    }
+                  }
+
+                  .project-body-inner-right{
+                    position: relative;
+                    top: 0;
+                    width: 90%;
+                  }
+            }
+    
+            
+    
+        }
+    }
 }
 
 
@@ -339,7 +435,7 @@
             h1.project-title {
             margin-left: 30px;
             margin-top: 70px;
-            font-size: 36px;
+            font-size: 30px;
             }
 
             .curve {
@@ -355,8 +451,8 @@
             .curve svg {
                 position: relative;
                 display: block;
-                width: calc(80% + 1000px);
-                height: 350px;
+                width: calc(150% + 800px);
+                height: 300px;
             }
             
             
@@ -420,8 +516,10 @@
 
                   .project-body-inner-right{
                     position: relative;
+                    top: 0;
                     width: 85%;
                   }
+
             }
     
             

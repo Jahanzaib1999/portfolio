@@ -128,7 +128,9 @@ function ContactPage() {
               Australia
               <br />
               <br />
-              <span>jahanzaib1999@gmail.com</span>
+              <a href="mailto:jahanzaib1999@gmail.com">
+                jahanzaib1999@gmail.com
+              </a>
             </div>
           </div>
           <div className="main-div-right">

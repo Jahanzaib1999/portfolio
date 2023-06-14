@@ -203,7 +203,6 @@ function ProjectDetailPage() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   )
 }

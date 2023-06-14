@@ -18,6 +18,7 @@ function Footer() {
       <div className="footer-newsletter-container">
         <FooterNewsletter />
       </div>
+
       <div className="footer-brand-container">
         {/* Add your brand logo and name here */}
         <div
