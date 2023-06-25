@@ -2,6 +2,7 @@
   "name": "react-portfolio-second",
   "version": "0.1.0",
   "private": true,
+  "public":"public",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
@@ -19,7 +20,6 @@
     "gsap-trial": "^3.11.4",
     "leaflet": "^1.9.4",
     "loaders.css": "^0.1.2",
-    "next": "^13.2.4",
     "querystring-es3": "^0.2.1",
     "react": "^18.2.0",
     "react-content-loader": "^6.2.1",
@@ -40,7 +40,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
