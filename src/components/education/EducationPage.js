@@ -2,7 +2,8 @@ import './EducationPage.scss'
 
 import React, { useState, useEffect } from 'react'
 import AnimatedLetters from '../animatedLetters/AnimatedLetters'
-import Loader from 'react-loaders'
+// import Loader from 'react-loaders'
+import Loader from '../loader/Loader'
 import Footer from '../../components/footer/Footer'
 import { motion } from 'framer-motion'
 
@@ -246,7 +247,7 @@ function EducationPage() {
         <Footer />
       </div>
 
-      <Loader type="pacman" />
+      <Loader />
     </>
   )
 }

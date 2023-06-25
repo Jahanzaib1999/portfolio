@@ -2,11 +2,14 @@ import './HomePage.scss'
 
 import React, { useEffect, useState } from 'react'
 
+import ContentLoader from 'react-content-loader'
+
 import LogoTitle from '../../assets/images/logo-j.png'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../animatedLetters/AnimatedLetters'
 import Logo from './logo/Logo'
-import Loader from 'react-loaders'
+// import Loader from 'react-loaders'
+import Loader from '../loader/Loader'
 
 function HomePage() {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -70,7 +73,7 @@ function HomePage() {
         </div>
         <Logo />
       </div>
-      <Loader type="pacman" />
+      <Loader />
     </>
   )
 }

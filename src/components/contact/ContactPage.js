@@ -3,7 +3,10 @@ import './ContactPage.scss'
 import React from 'react'
 
 import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
+// import Loader from 'react-loaders'
+
+import Loader from '../loader/Loader'
+
 //import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
@@ -19,11 +22,13 @@ const pathVariants = {
     opacity: 0.5,
     pathLength: 0,
   },
+
   visible: {
     opacity: 1,
     pathLength: 1,
     transition: {
       duration: 10,
+      delay: 2,
       ease: 'easeInOut',
     },
   },
@@ -2431,7 +2436,7 @@ function ContactPage() {
         <Footer />
       </div>
 
-      <Loader type="pacman" />
+      <Loader />
     </>
   )
 }

@@ -4,7 +4,9 @@ import React from 'react'
 import AnimatedLetters from '../animatedLetters/AnimatedLetters'
 
 import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
+
+import Loader from '../loader/Loader'
+
 import AboutImage from '../../assets/images/img-j.png'
 import AboutSecondDivImage from '../../assets/images/about-second.png'
 import AboutThirdDivImage from '../../assets/images/third-div-about.png'
@@ -91,7 +93,6 @@ function AboutPage() {
     <SiWordpress />,
     <SiGoogleplay />,
     <SiSquarespace />,
-    <SiJava />,
     <SiMicrosoft />,
     <SiJavascript />,
     <SiJira />,
@@ -466,8 +467,8 @@ function AboutPage() {
           </div>
         </div>
         <Footer />
-        <Loader type="pacman" />
       </div>
+      <Loader />
     </>
   )
 }

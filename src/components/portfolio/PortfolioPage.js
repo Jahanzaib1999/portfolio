@@ -1,7 +1,9 @@
 import './PortfolioPage.scss'
 
 import React, { useState, useEffect } from 'react'
-import Loader from 'react-loaders'
+// import Loader from 'react-loaders'
+
+import Loader from '../loader/Loader'
 import AnimatedLetters from '../animatedLetters/AnimatedLetters'
 import useCollection from '../../hooks/useCollection'
 import ProjectCard from '../projectCard/ProjectCard'
@@ -40,7 +42,7 @@ function PortfolioPage() {
         </div>
         <Footer />
       </div>
-      <Loader type="pacman" />
+      <Loader />
     </>
   )
 }

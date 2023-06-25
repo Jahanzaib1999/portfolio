@@ -1,7 +1,8 @@
 import './ServicesPage.scss'
 
 import React, { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
+// import Loader from 'react-loaders'
+import Loader from '../loader/Loader'
 import AnimatedLetters from '../animatedLetters/AnimatedLetters'
 import ServiceCard from '../servicecard/ServiceCard'
 import WebDev from '../../assets/images/web-dev.png'
@@ -90,7 +91,6 @@ function ServicesPage() {
     <SiWordpress />,
     <SiGoogleplay />,
     <SiSquarespace />,
-    <SiJava />,
     <SiMicrosoft />,
     <SiJavascript />,
     <SiJira />,
@@ -229,10 +229,9 @@ function ServicesPage() {
             <i className="fa fa-icon"></i>
           </div>
         </div> */}
-
+        <Loader />
         <Footer />
       </div>
-      <Loader type="pacman" />
     </>
   )
 }

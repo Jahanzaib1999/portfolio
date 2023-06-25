@@ -22,4 +22,42 @@
       opacity: 0.5;
     }
   }
+
+  
+  .loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: calc(100% + 150px);
+  
+  
+  .custom-loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width:768px){
+  .loader-container {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: calc(100% + 50px);
+    z-index: 10000;
+  
+  
+  .custom-loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+}
       
