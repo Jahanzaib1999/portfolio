@@ -39,7 +39,7 @@ function Logo() {
       transition={{
         delay: 2,
         default: {
-          duration: 7,
+          duration: 6,
           ease: [0, 0.71, 0.2, 1.01],
         },
         scale: {
@@ -59,8 +59,6 @@ function Logo() {
 
       <svg
         id="svg-logo"
-        width="176.429mm"
-        height="176.429mm"
         version="1.0"
         viewBox="0 0 1100 1080"
         xmlns="http://www.w3.org/2000/svg"

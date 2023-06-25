@@ -16,7 +16,6 @@
       width: 100%;
       height: auto;
       bottom: 0;
-      transform: rotateZ(0deg) !important;
       
     }
   
@@ -30,8 +29,7 @@
       height: fit-content;
       width: 100%;
       opacity: 0;
-      transform: rotateZ(0deg) !important;
-      //z-index: 1;
+      object-fit: cover;
       animation: fadeIn 2s ease-in-out 4s forwards;
       
     }
