@@ -34,12 +34,12 @@ function Logo() {
     <motion.div
       className="logo-container"
       ref={bgRef}
-      initial={{ opacity: 0, scale: 0.5, rotate: 180 }}
+      initial={{ opacity: 0, scale: 0.25, rotate: 180 }}
       animate={{ opacity: 1, scale: 1, rotate: 0 }}
       transition={{
         delay: 2,
         default: {
-          duration: 5,
+          duration: 7,
           ease: [0, 0.71, 0.2, 1.01],
         },
         scale: {
