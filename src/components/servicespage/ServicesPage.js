@@ -229,9 +229,10 @@ function ServicesPage() {
             <i className="fa fa-icon"></i>
           </div>
         </div> */}
-        <Loader />
+
         <Footer />
       </div>
+      <Loader />
     </>
   )
 }
