@@ -24,11 +24,15 @@ function ProjectInfoCard({ appType, client, year, web_url }) {
       </div>
 
       <div className="infor-card-buttons-div">
-        {web_url !== 'null' && (
+        {web_url && web_url !== 'null' && (
           <button
             className="info-card-button"
             onClick={() => {
-              window.open(web_url, '_blank')
+              const url =
+                web_url.startsWith('http') || web_url.startsWith('https')
+                  ? web_url
+                  : `https://${web_url}`
+              window.open(url, '_blank')
             }}
           >
             Live Demo
