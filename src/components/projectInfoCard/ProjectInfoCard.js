@@ -2,7 +2,7 @@ import React from 'react'
 import './ProjectInfoCard.scss'
 import { BsBoxArrowUpRight } from 'react-icons/bs'
 
-function ProjectInfoCard({ appType, client, year, web_url }) {
+function ProjectInfoCard({ appType, client, year, web_url, github_url }) {
   return (
     <div className="InfoCard">
       <div className="InfoCard-header">Project Info</div>
@@ -39,7 +39,16 @@ function ProjectInfoCard({ appType, client, year, web_url }) {
           </button>
         )}
 
-        <button className="info-card-button github-button">
+        <button
+          className="info-card-button github-button"
+          onClick={() => {
+            const url =
+              github_url.startsWith('http') || github_url.startsWith('https')
+                ? github_url
+                : `https://${github_url}`
+            window.open(url, '_blank')
+          }}
+        >
           Github <BsBoxArrowUpRight className="button-icon" />
         </button>
       </div>

@@ -66,6 +66,10 @@ function ProjectCard({ project }) {
               )
             })}
         </div>
+
+        <div className="card-backdrop">
+          <img src={project && project.backdrop} />
+        </div>
       </div>
     </div>
   )

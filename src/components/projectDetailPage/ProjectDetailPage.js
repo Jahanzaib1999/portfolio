@@ -117,7 +117,10 @@ function ProjectDetailPage() {
         </div>
 
         <div className="project-image">
-          <img src={ProjectImage} alt="project-image" />
+          <img
+            src={(project && project.backdrop) || ProjectImage}
+            alt="project-image"
+          />
         </div>
 
         <div className="project-body-inner">
@@ -199,6 +202,7 @@ function ProjectDetailPage() {
               client={project && project.client}
               year={project && project.year}
               web_url={project && project.web_url}
+              github_url={project && project.github_url}
             />
           </div>
         </div>
