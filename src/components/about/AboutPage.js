@@ -8,6 +8,8 @@ import { useEffect, useState } from 'react'
 import Loader from '../loader/Loader'
 
 import AboutImage from '../../assets/images/img-j.png'
+import JahanImg from '../../assets/images/jahan-img.jpg'
+
 import AboutSecondDivImage from '../../assets/images/about-second.png'
 import AboutThirdDivImage from '../../assets/images/third-div-about.png'
 import HardworkImage from '../../assets/images/hardwork-value-card.png'
@@ -287,7 +289,7 @@ function AboutPage() {
             </div>
 
             <div className="about-image">
-              <img src={AboutImage} />
+              <img src={JahanImg} />
             </div>
           </div>
 
