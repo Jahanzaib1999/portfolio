@@ -9,6 +9,8 @@ import useCollection from '../../hooks/useCollection'
 import ProjectCard from '../projectCard/ProjectCard'
 import Footer from '../../components/footer/Footer'
 
+import { Helmet } from 'react-helmet'
+
 function PortfolioPage() {
   const [letterClass, setLetterClass] = useState('text-animate')
 
@@ -26,6 +28,18 @@ function PortfolioPage() {
 
   return (
     <>
+      <Helmet>
+        <title>Portfolio - Jahan's Portfolio</title>
+        <meta
+          name="description"
+          content="Explore the portfolio of Jahan, showcasing projects in web development, app development, UI/UX design, and coding."
+        />
+        <meta
+          name="keywords"
+          content="Jahan, Portfolio, Projects, Web Developer, App Developer, UI/UX Designer, Coder"
+        />
+      </Helmet>
+
       <div className="container portfolio-page">
         <h1 className="page-title">
           <AnimatedLetters

@@ -65,6 +65,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Footer from '../footer/Footer'
+import { Helmet } from 'react-helmet'
 
 function ServicesPage() {
   const iconList = [
@@ -123,6 +124,18 @@ function ServicesPage() {
 
   return (
     <>
+      <Helmet>
+        <title>Services - Jahan's Portfolio</title>
+        <meta
+          name="description"
+          content="Learn about the services offered by Jahan, including web development, app development, UI/UX design, and coding."
+        />
+        <meta
+          name="keywords"
+          content="Jahan, Services, Web Development, App Development, UI/UX Design, Coder"
+        />
+      </Helmet>
+
       <div className="container services-page">
         <h1 className="page-title">
           <AnimatedLetters

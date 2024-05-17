@@ -67,6 +67,7 @@ import {
   SiAdobexd,
 } from 'react-icons/si'
 import Footer from '../footer/Footer'
+import { Helmet } from 'react-helmet'
 
 function AboutPage() {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -233,6 +234,18 @@ function AboutPage() {
 
   return (
     <>
+      <Helmet>
+        <title>About - Jahan's Portfolio</title>
+        <meta
+          name="description"
+          content="Learn more about Jahan, a talented developer with expertise in web development, app development, UI/UX design, and coding."
+        />
+        <meta
+          name="keywords"
+          content="Jahan, About, Web Developer, App Developer, UI/UX Designer, Coder"
+        />
+      </Helmet>
+
       <div className="container about-page">
         <div className="content">
           <div className="main-div">

@@ -2,7 +2,7 @@
   "name": "react-portfolio-second",
   "version": "0.1.0",
   "private": true,
-  "public":"public",
+  "public": "public",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
@@ -24,6 +24,7 @@
     "react": "^18.2.0",
     "react-content-loader": "^6.2.1",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.7.1",
     "react-intersection-observer": "^9.4.3",
     "react-loaders": "^3.0.1",

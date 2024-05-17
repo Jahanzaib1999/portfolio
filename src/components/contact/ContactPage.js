@@ -16,6 +16,7 @@ import { motion } from 'framer-motion'
 import Footer from '../../components/footer/Footer'
 
 import AusMapBackground from '../../assets/images/ausMap.png'
+import { Helmet } from 'react-helmet'
 
 const pathVariants = {
   hidden: {
@@ -67,6 +68,18 @@ function ContactPage() {
 
   return (
     <>
+      <Helmet>
+        <title>Contact - Jahan's Portfolio</title>
+        <meta
+          name="description"
+          content="Get in touch with Jahan, a versatile developer skilled in web development, app development, UI/UX design, and coding."
+        />
+        <meta
+          name="keywords"
+          content="Jahan, Contact, Web Developer, App Developer, UI/UX Designer, Coder"
+        />
+      </Helmet>
+
       <div className="container contact-page">
         <div className="main-div">
           <div className="contact-text-zone">

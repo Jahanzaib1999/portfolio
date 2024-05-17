@@ -35,6 +35,7 @@ import {
 import Footer from '../../components/footer/Footer'
 
 import Loader from 'react-loaders'
+import { Helmet } from 'react-helmet'
 
 // gsap.registerPlugin(ScrollTrigger)
 
@@ -87,6 +88,22 @@ function ProjectDetailPage() {
 
   return (
     <div className="container project-detail-page">
+      {project && (
+        <Helmet>
+          <title>{`${project.name} - Jahan's Portfolio`}</title>
+          <meta
+            name="description"
+            content={`${project.name} - ${project.description}`}
+          />
+          <meta
+            name="keywords"
+            content={`Jahan, Portfolio, ${project.name}, ${project.technologies
+              .map((tech) => tech.name)
+              .join(', ')}`}
+          />
+        </Helmet>
+      )}
+
       <div className="project-header">
         <h1 className="project-title">
           <AnimatedLetters

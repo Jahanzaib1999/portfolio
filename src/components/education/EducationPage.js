@@ -15,6 +15,7 @@ import SydneySkyline from '../../assets/images/sydney-skyline.jpg'
 import DubaiSkyline from '../../assets/images/dubai-skyline.jpg'
 import AusMap from '../../assets/images/australia-map.png'
 import UAEMap from '../../assets/images/uae-map.jpeg'
+import { Helmet } from 'react-helmet'
 
 function EducationPage() {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -41,6 +42,18 @@ function EducationPage() {
 
   return (
     <>
+      <Helmet>
+        <title>Education - Jahan's Portfolio</title>
+        <meta
+          name="description"
+          content="Discover Jahan's educational background and qualifications in web development, app development, UI/UX design, and coding."
+        />
+        <meta
+          name="keywords"
+          content="Jahan, Education, Qualifications, Web Developer, App Developer, UI/UX Designer, Coder"
+        />
+      </Helmet>
+
       <div className="container education-page">
         <h1 className="page-title">
           <AnimatedLetters

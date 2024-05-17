@@ -10,6 +10,7 @@ import AnimatedLetters from '../animatedLetters/AnimatedLetters'
 import Logo from './logo/Logo'
 // import Loader from 'react-loaders'
 import Loader from '../loader/Loader'
+import { Helmet } from 'react-helmet'
 
 function HomePage() {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -37,6 +38,17 @@ function HomePage() {
 
   return (
     <>
+      <Helmet>
+        <title>Home - Jahan's Portfolio</title>
+        <meta
+          name="description"
+          content="Jahan's portfolio, a versatile developer skilled in web development, app development, UI/UX design, and coding."
+        />
+        <meta
+          name="keywords"
+          content="Jahan, Portfolio, Web Developer, App Developer, UI/UX Designer, Coder"
+        />
+      </Helmet>
       <div className="container home-page">
         <div className="text-zone">
           <h1>
